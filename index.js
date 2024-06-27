@@ -11,15 +11,6 @@ const app = express();
 // Apply middlewares
 app.use(express.json());
 
-// Define routes
-app.get('/home', (req, res) => {
-    res.json('Welcome home');
-});
-
-app.post('/login', (req, res) => {
-    res.json('Login successful');
-});
-
 // Use routes
 app.use(recipeRouter);
 
