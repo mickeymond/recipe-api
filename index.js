@@ -17,6 +17,7 @@ expressOasGenerator.handleResponses(app, {
 
 // Apply middlewares
 app.use(express.json());
+app.use(express.static('uploads'));
 
 // Use routes
 app.use(recipeRouter);
